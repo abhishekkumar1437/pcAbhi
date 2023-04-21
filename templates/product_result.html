@@ -1,0 +1,19 @@
+{% extends 'index.html'%}
+
+
+{% block body%}
+<div class="container">
+    <div class="row">
+        {% for x in categorys %}
+        <div class="col-3"> 
+            <h3> {{x.title}}</h3>       
+        </div>
+        <div class="col-9">
+            {% for x in categorys %}
+            <h3> {{x.description}}</h3>  
+            {%endfor%}   
+        </div>
+        
+    </div>
+</div>
+{% endblock %}
